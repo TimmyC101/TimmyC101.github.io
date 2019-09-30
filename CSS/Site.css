@@ -1,0 +1,522 @@
+body {
+    margin: 0px;
+    font-family: fantasy;
+    width: 100%;
+}
+
+.text {
+    font-size: 1rem;
+    text-shadow: 2px 2px white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+@media (max-width: 575.98px) {
+    .text {
+        font-size: 0.75rem;
+    }
+}
+
+.ztop {
+    z-index: 3;
+}
+
+.zmid {
+    z-index: 2;
+}
+
+.zlow {
+    z-index: 1;
+}
+
+/* BEGIN NAVBAR */
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: darkslategrey;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.name {
+    display: flex;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    left: 180px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    border: 2px solid black;
+    background: lightslategray;
+    transition: all 600ms cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.contact:before {
+    position: absolute;
+    content: "";
+    height: 0px;
+    width: 0px;
+    right: 100%;
+    border-right: 20px solid black;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+}
+
+.contact.show {
+    opacity: 1;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: auto; /* positions icons on right side of flexbox */
+    transition: all 1000ms cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.icons:hover {
+    margin-right: 15px;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    margin-left: 6px;
+    transition: all 1000ms cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.icon:hover {
+    height: 60px;
+    width: 60px;
+}
+
+/* images are saved as squares with white space around - must be clipped into circles */
+/* clip %'s change based on image to prevent weird pixel effects */
+.icon-LinkedIn {
+    background-image: url("../images/LinkedIn.png");
+    background-size: 50px;
+    clip-path: circle(48% at 50% 50%);
+}
+
+.icon-LinkedIn:hover {
+    background-size: 60px;
+}
+
+.icon-GitHub {
+    background-image: url("../images/GitHub.png");
+    background-size: 50px;
+    clip-path: circle(48% at 50% 50%);
+}
+
+.icon-GitHub:hover {
+    background-size: 60px;
+}
+
+.icon-Email {
+    background-image: url("../images/Email.png");
+    background-size: 50px;
+    clip-path: circle(49% at 50% 50%);
+}
+
+.icon-Email:hover {
+    background-size: 60px;
+}
+
+.icon-Resume {
+    background-image: url("../images/Resume.png");
+    background-size: 50px;
+    clip-path: circle(49% at 50% 50%);
+}
+
+.icon-Resume:hover {
+    background-size: 60px;
+}
+
+/* END NAVBAR */
+
+
+
+/* BEGIN TITLE BAR */
+
+.title-box {
+    position: relative;
+}
+
+.title-image {
+    height: 400px;
+    background-image: url("../images/Office.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    filter: grayscale(100%) saturate(100%) brightness(70%) hue-rotate(180deg);
+}
+
+.orbit {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+}
+
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: -50px 0 0 -50px;
+    background-image: url("../images/Tim.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    transition: all 1000ms cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.sun:hover {
+    height: 120px;
+    width: 120px;
+    margin: -60px 0 0 -60px;
+    box-shadow: 0 0 10px 5px darkslategray;
+}
+
+.planet1-box {
+    position: absolute;
+    height: 380px;
+    width: 10%;
+    top: 10px;
+    left: 45%;
+    animation: SlideX1 20s infinite ease-out;
+    z-index: 1;
+}
+
+.planet1 {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: calc(50% - 15px);
+    animation: SlideY1 20s infinite ease-in;
+}
+
+.planet2-box {
+    position: absolute;
+    height: 320px;
+    width: 10%;
+    top: 40px;
+    left: 45%;
+    animation: SlideX2 16s infinite ease-out;
+}
+
+.planet2 {
+    position: absolute;
+    height: 30px;
+    width: 40px;
+    left: calc(50% - 20px);
+    animation: SlideY2 16s infinite ease-in;
+}
+
+.planet3-box {
+    position: absolute;
+    height: 260px;
+    width: 10%;
+    top: 70px;
+    left: 45%;
+    animation: SlideX3 12s infinite ease-out;
+}
+
+.planet3 {
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    left: calc(50% - 30px);
+    animation: SlideY3 12s infinite ease-in;
+}
+
+.planet4-box {
+    position: absolute;
+    height: 200px;
+    width: 10%;
+    top: 100px;
+    left: 45%;
+    animation: SlideX4 8s infinite ease-out;
+}
+
+.planet4 {
+    position: absolute;
+    height: 30px;
+    width: 80px;
+    left: calc(50% - 40px);
+    animation: SlideY4 8s infinite ease-in;
+}
+
+/* Orbit is created by applying one translation to the parent container and one translation to the child object
+    The easing functions are then applied to create an elliptical pattern as opposed to a linear one */
+@keyframes SlideX1 {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        animation-timing-function: ease-in;
+        transform: translateX(450%);
+    }
+    50% {
+        animation-timing-function: ease-out;
+        transform: translateX(0%);
+    }
+    75% {
+        animation-timing-function: ease-in;
+        transform: translateX(-450%);
+    }
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes SlideY1 {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        animation-timing-function: ease-out;
+        transform: translateY(175px);
+    }
+    50% {
+        animation-timing-function: ease-in;
+        transform: translateY(350px);
+    }
+    75% {
+        animation-timing-function: ease-out;
+        transform: translateY(175px);
+    }
+    100% {        
+        animation-timing-function: ease-in;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes SlideX2 {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        animation-timing-function: ease-in;
+        transform: translateX(-360%);
+    }
+    50% {
+        animation-timing-function: ease-out;
+        transform: translateX(0%);
+    }
+    75% {
+        animation-timing-function: ease-in;
+        transform: translateX(360%);
+    }
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes SlideY2 {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        animation-timing-function: ease-out;
+        transform: translateY(145px);
+    }
+    50% {
+        animation-timing-function: ease-in;
+        transform: translateY(290px);
+    }
+    75% {
+        animation-timing-function: ease-out;
+        transform: translateY(145px);
+    }
+    100% {        
+        animation-timing-function: ease-in;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes SlideX3 {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        animation-timing-function: ease-in;
+        transform: translateX(256%);
+    }
+    50% {
+        animation-timing-function: ease-out;
+        transform: translateX(0%);
+    }
+    75% {
+        animation-timing-function: ease-in;
+        transform: translateX(-256%);
+    }
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes SlideY3 {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        animation-timing-function: ease-out;
+        transform: translateY(115px);
+    }
+    50% {
+        animation-timing-function: ease-in;
+        transform: translateY(230px);
+    }
+    75% {
+        animation-timing-function: ease-out;
+        transform: translateY(115px);
+    }
+    100% {        
+        animation-timing-function: ease-in;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes SlideX4 {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        animation-timing-function: ease-in;
+        transform: translateX(-126%);
+    }
+    50% {
+        animation-timing-function: ease-out;
+        transform: translateX(0%);
+    }
+    75% {
+        animation-timing-function: ease-in;
+        transform: translateX(126%);
+    }
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes SlideY4 {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        animation-timing-function: ease-out;
+        transform: translateY(85px);
+    }
+    50% {
+        animation-timing-function: ease-in;
+        transform: translateY(170px);
+    }
+    75% {
+        animation-timing-function: ease-out;
+        transform: translateY(85px);
+    }
+    100% {        
+        animation-timing-function: ease-in;
+        transform: translateY(0px);
+    }
+}
+
+/* END TITLE BAR */
+
+
+
+/* BEGIN SKILLS AND POPUPS BAR */
+
+.skills-box {
+    height: 200px;
+    background: rgb(240, 240, 240);
+    /* background: linear-gradient(90deg, rgba(240,240,240,1) 0%, rgba(200,200,200,1) 100%); */
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.skills-title {
+    text-align: center;
+    height: 30px;
+    padding: 10px;
+}
+
+.divider {
+    width: 80%;
+    margin: 0% 10%;
+    height: 2px;
+    background-color: black;
+}
+
+.skills-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 148px;
+}
+
+.skills-image {
+    height: 80px;
+    width: 100px;
+    margin-right: 10px;
+    border: 2px solid black;
+    transition: all 1000ms cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.skills-image:hover {
+    height: 100px;
+    width: 125px;
+    box-shadow: 0 0 10px 5px darkslategray;
+}
+
+.popup {
+    position: absolute;
+    visibility: hidden;
+    background-color: lightgray;
+    bottom: 240px;
+    font-size: 1rem;
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.show-popup {
+    visibility: visible;
+    box-shadow: 0 0 10px 5px black;
+
+}
+
+#Tim-popup {
+    bottom: 0px;
+}
+
+/* END SKILLS BAR */
+
+.BG2 {
+    position: relative;
+    height: 300px;
+    background: rgb(200, 200, 200);
+    /* background: linear-gradient(90deg, rgba(200,200,200,1) 0%, rgba(240,240,240,1) 100%); */
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/Site.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./JS/Scripts.js"></script>
+        <title>Tim's Portfolio!</title>
+    </head>
+
+    <body>
+    
+  <!-- BEGIN NAVBAR -->
+        <div class="navbar">
+            <div class="name">
+                Tim Calhoun
+            </div>
+            <div class="contact">
+                281-797-8470
+                <div class="contact-arrow"></div>
+            </div>
+            <div class="icons">
+                <a class="icon icon-LinkedIn" href="https://www.linkedin.com/in/tim-calhoun-7159885b/" target="_blank"></a>
+                <a class="icon icon-GitHub" href="https://github.com/TimmyC101/LiveProjects" target="_blank"></a>
+                <a class="icon icon-Email" href="mailto:tcalhoun101@yahoo.com" target="_blank"></a>
+                <a class="icon icon-Resume" href="./Docs/Tech Resume.docx"></a>
+            </div>
+        </div>
+
+        <div class="title-box">
+            <div class="orbit">
+                <img class="sun btn zmid" onclick="popup('Tim-popup')"></div>
+                <div class="planet1-box zlow">
+                    <div class="planet1 text">Full</div>
+                </div>
+                <div class="planet2-box zlow">
+                    <div class="planet2 text">Stack</div>
+                </div>
+                <div class="planet3-box zlow">
+                    <div class="planet3 text zlow">Software</div>
+                </div>
+                <div class="planet4-box zlow">
+                    <div class="planet4 text zlow">Developer</div>
+                </div>
+            </div>
+            <div class="title-image"></div>
+        </div>
+
+        <div class="skills-box">
+            <div class="skills-title">
+                Development Skills
+            </div>
+            <div class="divider"></div>
+            <div class="skills-buttons">
+                <img class="skills-image btn" src="./Images/HTML.png" onclick="popup('html-popup')" alt="HTML">
+                <span class="popup ztop" id="html-popup">The HTML for my online portfolio was written completely from scratch.
+                    <br><br>Additionally, I designed this website using a significant amount of custom CSS code.  
+                    <br><br>I was determined to learn the fundamentals myself, rather than simply copying a colleagues templating or utilizing BootStrap code without understanding how it functioned.</span>
+                <img class="skills-image btn" src="./Images/JS2.png" onclick="popup('JS-popup')" alt="JS">
+                <span class="popup ztop" id="JS-popup">This popup functionality was created without using any JQuery or Bootstrap (though I am capable of leveraging both).
+                    <br><br>I utilized relative & absolute positioning, hidden containers, visibility togglers, and JS getElement methods & action events.
+                    <br><br> I also added conditional statements such that the popup would only toggle off if the user clicked elsewhere on the screen or clicked again on the button itself.</span>
+                <img class="skills-image btn" src="./Images/Python.png" onclick="popup('Python-popup')" alt="Python">
+                <span class="popup ztop" id="Python-popup">Skilled with basic Python principles such as functions, classes, methods, and variables.  
+                    <br><br>Able to construct, manage, and populate databases using python syntax.  
+                    <br><br>Familiar with tkinter module and Django Framework.
+                    <br><br>Participated in a live project for which I utilized Django, html, and JS to create a graph that plotted user inputs from a data entry form. 
+                    <br><br><a href="https://github.com/TimmyC101/LiveProjects/tree/master/LiveProject-Python" class="btn" target="_blank">Python Live Project</a></span>
+                <img class="skills-image btn" src="./Images/Csharp.jpg" onclick="popup('CSharp-popup')" alt="CSharp">
+                <span class="popup ztop" id="CSharp-popup">Proficient with numerous C# concepts, including but not limited to: classes & objects, functions, control logic, exception handling, classes, debugging, file I/O, library access/management, and database access/management.
+                    <br><br>Capable of utilizing the Web Forms and MVC programming models of ASP.NET to build web applications.
+                    <br><br>Participated in a live project utilizing the ASP.NET MVC design framework.  I created a password validation box, enhanced mobile compatibility, created a collapsing navbar with a sliding icon, and created and animated a footer. 
+                    <br><br><a href="https://github.com/TimmyC101/LiveProjects/tree/master/LiveProject-CSharp" class="btn" target="_blank">C# Live Project</a></span>
+                <img class="skills-image btn" src="./Images/SQL.png" onclick="popup('SQL-popup')" alt="SQL">
+                <span class="popup ztop" id="SQL-popup">Capable of creating, updating, altering, managing, and maintaining SQL databases.  
+                        <br><br>Able to write logic to retrieve specific data sets using joins, where/having clauses, groupings, aggregate functions, and more.</span>
+                <img class="skills-image btn" src="./Images/Excel.png" onclick="popup('Excel-popup')" alt="Excel">
+                <span class="popup ztop" id="Excel-popup">During my time at Chevron, I identified several processes that were inefficient and sought to rectify the situation.  To that end, I taught myself VBA and created custom Excel tools to reduce repetitive manual labor and streamline processes.  
+                    <br><br>Within this repository is a monitoring tool that I designed to take in a few inputs from a well tracking software and create numerous graphs and charts for quick and simplified data analysis.
+                    <br><br><a href="https://github.com/TimmyC101/Excel-and-VBA" class="button-toggler" target="_blank">Excel Repository</a></span>
+                <img class="skills-image btn" src="./Images/GitHub.png" onclick="popup('GitHub-popup')" alt="GitHub">
+                <span class="popup ztop" id="GitHub-popup"> Proficient with version control, GitHub, repositories, GitHub Desktop Application, and GitBash.
+                        <br><br>Knowledgeable about general version control concepts such as: pushes, pulls, branches, merges, and more.</span>
+                <!-- About Me-->
+                <span class="popup ztop" id="Tim-popup">I have a bachelor's degree in Civil Engineering from the University of Texas at Austin.  During my time at Chevron as a data analyst, I taught myself Visual Basic in order to streamline and improve various processes, and created custom tools to improve efficiency and allow for quick and easy analysis of data.  
+                    <br><br>It was during that time that I discovered my passion for programming;  so I packed up my belongings and moved to Denver in order to enroll in the Software Development Course at The Tech Academy in Denver, Colorado, which I have recently completed.
+                    <br><br>Loki (pictured) is my pup.  He enjoys playing, playing, and sometimes when he is a little tired, playing.
+                    <br><br>Personally, I enjoy staying active by hiking and playing sports.  When I'm not doing that, you will generally find me dragonslaying with my friends via online or tabletop games.
+                </span>
+            </div>
+        </div>
+
+        <div class="BG2">
+            <div class="rotate"></div>
+        </div>
+
+
+
+    </body>
+
+</html>
