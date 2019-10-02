@@ -105,7 +105,7 @@ body {
 /* images are saved as squares with white space around - must be clipped into circles */
 /* clip %'s change based on image to prevent weird pixel effects */
 .icon-LinkedIn {
-    background-image: url("../images/LinkedIn.png");
+    background-image: url("../Images/LinkedIn.png");
     background-size: 50px;
     clip-path: circle(48% at 50% 50%);
 }
@@ -115,7 +115,7 @@ body {
 }
 
 .icon-GitHub {
-    background-image: url("../images/GitHub.png");
+    background-image: url("../Images/GitHub.png");
     background-size: 50px;
     clip-path: circle(48% at 50% 50%);
 }
@@ -125,7 +125,7 @@ body {
 }
 
 .icon-Email {
-    background-image: url("../images/Email.png");
+    background-image: url("../Images/Email.png");
     background-size: 50px;
     clip-path: circle(49% at 50% 50%);
 }
@@ -135,7 +135,7 @@ body {
 }
 
 .icon-Resume {
-    background-image: url("../images/Resume.png");
+    background-image: url("../Images/Resume.png");
     background-size: 50px;
     clip-path: circle(49% at 50% 50%);
 }
@@ -156,7 +156,7 @@ body {
 
 .title-image {
     height: 400px;
-    background-image: url("../images/Office.jpg");
+    background-image: url("../Images/Office.jpg");
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -180,7 +180,7 @@ body {
     width: 100px;
     border-radius: 50%;
     margin: -50px 0 0 -50px;
-    background-image: url("../images/Tim.jpg");
+    background-image: url("../Images/Tim.jpg");
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
