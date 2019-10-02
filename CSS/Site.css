@@ -449,8 +449,14 @@ body {
 /* BEGIN SKILLS AND POPUPS BAR */
 
 .skills-box {
-    height: 200px;
     background: rgb(240, 240, 240);
+    /* background: linear-gradient(90deg, rgba(240,240,240,1) 0%, rgba(200,200,200,1) 100%); */
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.skills-box2 {
+    background: rgb(200, 200, 200);
     /* background: linear-gradient(90deg, rgba(240,240,240,1) 0%, rgba(200,200,200,1) 100%); */
     font-size: 1.5rem;
     position: relative;
@@ -473,14 +479,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    height: 148px;
+    align-items: flex-start;
 }
 
 .skills-image {
     height: 80px;
     width: 100px;
-    margin-right: 10px;
     border: 2px solid black;
     transition: all 1000ms cubic-bezier(0.2, 1, 0.2, 1);
 }
@@ -494,29 +498,44 @@ body {
 .popup {
     position: absolute;
     visibility: hidden;
-    background-color: lightgray;
+    background-color: rgb(226, 226, 226);
     bottom: 240px;
     font-size: 1rem;
     width: 80%;
     padding: 20px;
     border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px 5px black;
 }
 
 .show-popup {
     visibility: visible;
-    box-shadow: 0 0 10px 5px black;
-
 }
 
 #Tim-popup {
     bottom: 0px;
 }
 
-/* END SKILLS BAR */
-
-.BG2 {
-    position: relative;
-    height: 300px;
-    background: rgb(200, 200, 200);
-    /* background: linear-gradient(90deg, rgba(200,200,200,1) 0%, rgba(240,240,240,1) 100%); */
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px 20px 0px;
 }
+
+.skills-text {
+    text-align: center;
+    width: 104px;
+    font-size: 1rem;
+
+}
+
+.prof-skills-mod {
+    text-align: center;
+    width: auto;
+    background-color: darkslategray;
+    color: white;
+    bottom: 460px;
+}
+
+/* END SKILLS BAR */
