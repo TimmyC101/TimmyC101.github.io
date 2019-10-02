@@ -1,7 +1,8 @@
 body {
     margin: 0px;
-    font-family: fantasy;
+    font-family: Gill Sans, sans-serif;
     width: 100%;
+    font-weight: bold;
 }
 
 .text {
