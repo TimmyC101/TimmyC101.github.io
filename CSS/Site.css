@@ -532,6 +532,13 @@ body {
     margin: 20px 10px 20px 0px;
 }
 
+.column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 30px 20px 0px;
+}
+
 .skills-text {
     text-align: center;
     width: 104px;
