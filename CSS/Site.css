@@ -517,6 +517,12 @@ body {
     box-shadow: 0 0 10px 5px black;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .popup {
+        left: calc(10% - 20px);
+    }
+}
+
 .show-popup {
     visibility: visible;
 }
@@ -552,6 +558,13 @@ body {
     background-color: darkslategray;
     color: white;
     bottom: 460px;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .prof-skills-mod {
+        left: 50%;
+        -ms-transform: translateX(-50%);
+    }
 }
 
 /* END SKILLS BAR */
