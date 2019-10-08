@@ -64,9 +64,10 @@ body {
     align-items: center;
     position: absolute;
     opacity: 0;
-    left: 180px;
-    height: 40px;
+    left: 200px;
+    height: 30px;
     width: 150px;
+    padding: 5px;
     text-align: center;
     border: 2px solid black;
     background: lightslategray;
@@ -517,6 +518,7 @@ body {
     box-shadow: 0 0 10px 5px black;
 }
 
+/* Centering fix for IE */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .popup {
         left: calc(10% - 20px);
@@ -560,6 +562,7 @@ body {
     bottom: 460px;
 }
 
+/* Centering Fix for IE */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .prof-skills-mod {
         left: 50%;
@@ -583,4 +586,12 @@ body {
     background-color: darkslategrey;
     color: white;
     font-size: 1.5rem;
+}
+
+.footer-margin {
+    margin: 20px 50px;
+}
+
+.footer a {
+    color: white;
 }
