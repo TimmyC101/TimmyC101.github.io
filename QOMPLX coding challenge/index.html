@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/styling.css" />
+    </head>
+    <body>
+        <div class="container center fontstyle">
+            <div class="title">Tip Calculator</div>
+            <div id="calculator" class="bg-gray border center fontcolor">
+                <input id="bill" class="numeral inpt border center fontstyle fontcolor" type="text" placeholder="Total Bill">
+                <div id="validation" class="validator">"Please enter a valid number."</div>
+                <select id="percent" class="inpt border center fontstyle fontcolor">
+                    <option>Percent of Tip</option>
+                </select>
+                <input id="party" class="inpt border center fontstyle fontcolor" type="number" placeholder="Party Size">
+                <button id="calculate" class="fontstyle">Calc Btn</button>
+                <div class="flex fontcolor">
+                    <div id="tip">Tip:</div><div id="tipamount">$$</div>
+                </div>
+                <div class="flex fontcolor">
+                    <div id="total">Total:</div><div id="personalamount">$$</div>
+                </div>
+            </div>
+        </div>
+        <script src="js/cleave.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

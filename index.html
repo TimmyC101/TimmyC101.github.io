@@ -3,15 +3,13 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./CSS/Site.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="./JS/Scripts.js"></script>
         <title>Tim's Portfolio!</title>
     </head>
 
     <body>
     
   <!-- BEGIN NAVBAR -->
-        <div class="navbar">
+        <div id="nav" class="navbar">
             <div class="name">
                 Tim Calhoun
             </div>
@@ -29,7 +27,7 @@
 
         <div class="title-box">
             <div class="orbit">
-                <img class="sun btn zmid" onclick="popup('Tim-popup')">
+                <img id="Tim-button" class="sun btn zmid">
                 <div class="planet1-box zlow">
                     <div class="planet1 text">Full</div>
                 </div>
@@ -53,16 +51,16 @@
             <div class="divider"></div>
             <div class="skills-buttons">
                 <div class="column">
-                    <img class="skills-image btn" src="./Images/HTML.png" onclick="popup('html-popup')" alt="HTML">
+                    <img id="Html-button" class="skills-image btn" src="./Images/HTML.png" alt="HTML">
                 </div>
-                <span class="popup ztop" id="html-popup">
+                <span class="popup ztop" id="Html-popup">
                     The HTML for my online portfolio was written completely from scratch.
                     <br><br>Additionally, I designed this website using a significant amount of custom CSS code.  
                     <br><br>I was determined to learn the fundamentals myself, rather than simply copying a colleagues templating or utilizing BootStrap code without understanding how it functioned.
                 </span>
 
                 <div class="column">
-                    <img class="skills-image btn" src="./Images/JS2.png" onclick="popup('JS-popup')" alt="JS">
+                    <img id = "JS-button" class="skills-image btn" src="./Images/JS2.png" alt="JS">
                 </div>
                 <span class="popup ztop" id="JS-popup">
                     This popup functionality was created without using any JQuery or Bootstrap (though I am capable of leveraging both).
@@ -71,7 +69,7 @@
                 </span>
 
                 <div class="column">
-                    <img class="skills-image btn" src="./Images/Python.png" onclick="popup('Python-popup')" alt="Python">
+                    <img id = "Python-button" class="skills-image btn" src="./Images/Python.png" alt="Python">
                 </div>
                 <span class="popup ztop" id="Python-popup">
                     Skilled with basic Python principles such as functions, classes, methods, and variables.  
@@ -82,7 +80,7 @@
                 </span>
 
                 <div class="column">
-                    <img class="skills-image btn" src="./Images/Csharp.jpg" onclick="popup('CSharp-popup')" alt="CSharp">
+                    <img id = "CSharp-button" class="skills-image btn" src="./Images/Csharp.jpg" alt="CSharp">
                 </div>
                 <span class="popup ztop" id="CSharp-popup">
                     Proficient with numerous C# concepts, including but not limited to: classes & objects, functions, control logic, exception handling, classes, debugging, file I/O, library access/management, and database access/management.
@@ -92,7 +90,7 @@
                 </span>
 
                 <div class="column">
-                    <img class="skills-image btn" src="./Images/SQL.png" onclick="popup('SQL-popup')" alt="SQL">
+                    <img id="SQL-button" class="skills-image btn" src="./Images/SQL.png" alt="SQL">
                 </div>
                 <span class="popup ztop" id="SQL-popup">
                     Capable of creating, updating, altering, managing, and maintaining SQL databases.  
@@ -100,7 +98,7 @@
                 </span>
 
                 <div class="column">
-                    <img class="skills-image btn" src="./Images/Excel.png" onclick="popup('Excel-popup')" alt="Excel">
+                    <img id="Excel-button" class="skills-image btn" src="./Images/Excel.png" alt="Excel">
                 </div>
                 <span class="popup ztop" id="Excel-popup">
                     During my time at Chevron, I identified several processes that were inefficient and sought to rectify the situation.  To that end, I taught myself VBA and created custom Excel tools to reduce repetitive manual labor and streamline processes.  
@@ -109,9 +107,9 @@
                 </span>
 
                 <div class="column">
-                    <img class="skills-image btn" src="./Images/GitHub.png" onclick="popup('GitHub-popup')" alt="GitHub">
+                    <img id="Github-button" class="skills-image btn" src="./Images/GitHub.png" alt="Github">
                 </div>
-                <span class="popup ztop" id="GitHub-popup"> 
+                <span class="popup ztop" id="Github-popup"> 
                     Proficient with version control, GitHub, repositories, GitHub Desktop Application, and GitBash.
                     <br><br>Knowledgeable about general version control concepts such as: pushes, pulls, branches, merges, and more.
                 </span>
@@ -134,7 +132,7 @@
             <div class="skills-buttons">
 
                 <div class="column2">
-                    <img class="skills-image btn" src="./Images/Analytical.jpg" onclick="popup('Analytical-popup')" alt="Analytical">
+                    <img id = Analytical-button class="skills-image btn" src="./Images/Analytical.jpg" alt="Analytical">
                     <div class="skills-text">
                         Affinity for Analytics
                     </div>
@@ -144,7 +142,7 @@
                 </span>
 
                 <div class="column2">
-                    <img class="skills-image btn" src="./Images/Teamwork.jpg" onclick="popup('Teamwork-popup')" alt="Teamwork">
+                    <img id="Teamwork-button" class="skills-image btn" src="./Images/Teamwork.jpg" alt="Teamwork">
                     <div class="skills-text">
                         Team Player
                     </div>
@@ -154,7 +152,7 @@
                 </span>
 
                 <div class="column2">
-                    <img class="skills-image btn" src="./Images/Pressure.gif" onclick="popup('Pressure-popup')" alt="Pressure">
+                    <img id="Pressure-button" class="skills-image btn" src="./Images/Pressure.gif" alt="Pressure">
                     <div class="skills-text">
                         Cool Under Pressure
                     </div>
@@ -164,7 +162,7 @@
                 </span>
 
                 <div class="column2">
-                    <img class="skills-image btn" src="./Images/Communication.jpg" onclick="popup('Communication-popup')" alt="Communication">
+                    <img id="Communication-button" class="skills-image btn" src="./Images/Communication.jpg" alt="Communication">
                     <div class="skills-text">
                         Exceptional Communicator
                     </div>
@@ -181,7 +179,8 @@
             <p class="footer-margin">Golden, CO</p>
         </div>
 
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./JS/Scripts.js"></script>
 
     </body>
 

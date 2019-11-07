@@ -8,14 +8,6 @@ $(document).ready(function() {
     $(".contact").removeClass("show");
   });
 
-  // $(".skills-image").on("mouseenter", function () {
-  //   $(".skills-box").addClass("darken");
-  // });
-
-  // $(".skills-image").on("mouseleave", function () {
-  //   $(".skills-box").removeClass("darken");
-  // });
-
     // var rippler = null;
 
     // $(".icon").on("mouseenter", function() {
@@ -31,8 +23,17 @@ $(document).ready(function() {
 
 });
 
-function popup(ele) 
-{
+// Sequence of code to identify which image was clicked and call the popup function with the appropriate text
+var images = document.getElementsByTagName("img"); // Create variable representing a nodelist of all image objects
+for (var i = 0; i < images.length; i++) { // Use for loop to create event trigger for each image
+  images[i].onclick = function() { // Trigger on click
+    var idString = this.id; // Find ID of image that was clicked
+    var popupString = idString.replace("button", "popup"); // Remove "-button" of image id and convert to "-popup" which gives the id of the popup text
+    Popup(popupString); // Send popup id to popup() function
+  }
+}
+
+function Popup(ele) {
     // Toggle "show-popup" class to clicked button to enable visibility
     var popup = document.getElementById(ele);
     popup.classList.toggle("show-popup");
@@ -47,8 +48,8 @@ function popup(ele)
     }
 }
 
-document.addEventListener("mousedown",closePopup);
-function closePopup()
+document.addEventListener("mousedown",ClosePopup);
+function ClosePopup()
 {
   var eID = window.event.target;
   // Do not execute code if clicking within a popup or clicking an image

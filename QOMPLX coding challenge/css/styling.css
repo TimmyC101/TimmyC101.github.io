@@ -1,0 +1,123 @@
+/* Generic stylings */
+.fontstyle {
+    font-family: arial, sans-serif;
+    font-weight: bold;
+}
+
+.fontcolor {
+    color:grey;
+}
+
+.center {
+    margin: 10px auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.bg-gray {
+    background-color: lightgray;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.border {
+    border-radius: 2px;
+    border: darkgrey solid 1px;
+}
+
+/* ID stylings */
+#calculator {
+    width: 220px;
+    position: relative;
+}
+
+#percent { /* adjusted because for some reason shrinks with padding */
+    height: 28px;
+    width: 186px;
+}
+
+/* Specific stylings */
+.container {
+    width: 300px;
+    color: black;
+    position: relative;
+}
+
+.inpt {
+    width: 180px;
+    height: 24px;
+    display: block;
+    padding-left: 4px;
+}
+
+button {
+    display: block;
+    margin: 0px 20px 10px auto;
+}
+
+
+/* validation box */
+.validator {
+    display: none;
+    color: red;
+    background-color: lightgray;
+    position: absolute;
+    height: 24px;
+    line-height: 24px;
+    width: 200px;
+    left: 240px;
+    top: 0px;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.validator:before {
+    position: absolute;
+    content: "";
+    height: 0px;
+    width: 0px;
+    right: 100%;
+    top: 5px;
+    border-right: 20px solid black;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+.validator.validated {
+    color:green;
+    font-size: 1rem;
+}
+
+.show {
+    display: block;
+}
+
+
+/* Tip based color changes */
+.coldest {
+    background-color: lightcoral
+}
+
+.colder {
+    background-color: orange;
+}
+
+.cold {
+    background-color: yellow;
+}
+
+.warm {
+    background-color: greenyellow;
+}
+
+.warmest {
+    background-color: yellowgreen;
+}
