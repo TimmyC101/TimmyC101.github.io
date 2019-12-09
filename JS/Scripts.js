@@ -9,7 +9,6 @@ $(function() {
   });
 
   $("#x").on("click", function () {
-    console.log("hi");
     $("#x").hide();
     $("#startup").hide();
     $("#startup-content").hide();
