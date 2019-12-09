@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Validator</title>
+        <link rel="stylesheet" href="css/styling.css" />
+    </head>
+    <body>
+        <div id="title"><p>Password Validation</p></div>
+        <div class="row">
+            <div class="column content">
+                <fieldset>
+                    <legend>User Sign-Up</legend>
+                    <Label id="un_label" for="username">User Name: </Label>
+                    <input id="un" type="text" name="username" placeholder="Just for show">
+                    <br/>
+                    <label id="pw_label" for="password">Password: </label>
+                    <input id="pw" type="password" name="password" placeholder="Type in Here!" maxlength="30">
+                    <input id="sub" type="submit" Value="Register">
+                </fieldset>
+                <div id="validation">
+                    <div id="chars">Contains at least 6 characters</div>
+                    <div id="letters">Contains at least 1 capital letter and 1 lowercase letter</div>
+                    <div id="numbers">Contains at least 1 number</div>
+                    <div id="special">Contains at least 1 special character</div>
+                </div>
+            </div>
+            <div class="column features">Features/Logic:
+                <ul>
+                    <li>CSS - Uses CSS codes and ":before" syntax to place checkmarks and x's.</li>
+                    <li>JS - Utilizes a combination of conditional statements with .match() and regex, resulting in .addClass() and .removeClass() on the appropriate DOM element, coloring the font.</li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

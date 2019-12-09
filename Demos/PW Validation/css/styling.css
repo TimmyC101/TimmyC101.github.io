@@ -1,0 +1,116 @@
+/* TEMPLATING */
+body {
+    margin: 0px;
+    font-family: Gill Sans, sans-serif;
+    width: 100%;
+    font-weight: bold;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: darkslategrey;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#title p {
+    margin-left: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 20px;
+    position: relative;
+}
+
+.column:nth-child(1) {
+    background-color: lightgray;
+    min-width: 720px;
+}
+
+.column:nth-child(2) {
+    background-color: rgb(211, 227, 233);
+}
+
+
+
+/* Password Validation */
+fieldset {
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 110px;
+}
+
+input {
+    margin: 5px;
+}
+
+label {
+    display: inline-block;
+}
+
+#sub {
+    float: middle;
+}
+
+#validation {
+    display: none;
+    position: absolute;
+    top: 44px;
+    left: 340px;
+    width: 360px;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: rgb(224, 228, 235);
+    padding: 10px;
+    padding-left: 30px;
+    color: red;
+    z-index: 1;
+    font-size: 0.8rem;
+}
+
+#validation:before {
+    position: absolute;
+    content: "";
+    height: 0px;
+    width: 0px;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 12px solid black;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -20px;
+    content: "\2713";
+  }
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -20px;
+    content: "\2716";
+}
+
+ul {
+    margin-top: 5px;
+}
+

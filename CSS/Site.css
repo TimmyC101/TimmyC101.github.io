@@ -39,6 +39,67 @@ body {
     z-index: 1;
 }
 
+
+/* BEGIN STARTUP */
+
+#startup {
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+}
+
+#startup-content {
+    position: absolute;
+    z-index: 101;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    background-color: white;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#x {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    z-index: 101;
+    border: 2px solid black;
+    border-radius: 18px;
+}
+
+#x:hover {
+    cursor: pointer;
+}
+
+.X1 {
+    position: absolute;
+    background-color: black;
+    top: 14px;
+    left: 0px;
+    height: 3px;
+    width: 30px;
+    transform: rotateZ(45deg);
+}
+
+.X2 {
+    position: absolute;
+    background-color: black;
+    top: 14px;
+    right: 0px;
+    height: 3px;
+    width: 30px;
+    transform: rotateZ(-45deg);
+}
+
+
 /* BEGIN NAVBAR */
 
 .navbar {
@@ -58,7 +119,47 @@ body {
     padding: 5px;
 }
 
-.contact {
+.dropdown {
+    position: relative;
+    margin-left: 50px;
+    height: 100%;
+    width: 200px;
+    line-height: 70px;
+}
+
+.demos {
+    margin-left: 10px;
+}
+
+.triangle {
+    position: absolute;
+    margin-left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 0px;
+    width: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+}
+
+.dropdown-items {
+    position: absolute;
+    display: none;
+    width: 140px;
+    background-color: darkslategray;
+    padding: 10px;
+    line-height: 100%;
+}
+
+.dropdown-items a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+/* .contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +184,7 @@ body {
     border-right: 20px solid black;
     border-top: 11px solid transparent;
     border-bottom: 11px solid transparent;
-}
+} */
 
 .contact.show {
     opacity: 1;

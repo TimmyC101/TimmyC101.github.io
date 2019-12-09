@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/styling.css" />
+    </head>
+    <body>
+        <div id="rectangles">
+            <div id="title"><p>Title Text</p></div>
+            <div class="row">
+                <div class="column content">
+                    Draw a box in the white space below!  Event handlers will find the location of the box and draw it on the screen.
+                    <br><br>
+                    <label for="color">Select Color:</label>
+                    <select id="color">
+                        <option value="Black">Black</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Green">Green</option>
+                        <option value="Red">Red</option>
+                        <option value="Orange">Orange</option>
+                    </select>
+                    <br><br>
+                    <button id="clear" value="clear">Remove all Boxes</button>
+                </div>
+                <div class="column features">Features/Logic:
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="clickArea"></div>
+            <div class="rect rectangle"></div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
