@@ -161,6 +161,11 @@ li {
     color: white;
     text-decoration: none;
     font-size: 0.8rem;
+    padding: 2px;
+}
+
+.dropdown-items a:hover {
+    background-color: gray;
 }
 
 /* .contact {
