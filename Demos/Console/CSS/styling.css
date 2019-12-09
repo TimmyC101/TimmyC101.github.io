@@ -34,3 +34,18 @@ body {
 .column:nth-child(2) {
     background-color: gray
 }
+
+table, th, td {
+    text-align: left;
+    padding: 4px;
+    border: 1px solid black;
+}
+
+th {
+    font-size: 1.2rem;
+}
+
+td {
+    width: 100px;
+    padding-left: 10px;
+}
