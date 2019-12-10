@@ -8,7 +8,7 @@ $(function() {
     $(".contact").removeClass("show");
   });
 
-  $("#x").on("click", function () {
+  $("#x, #startup").on("click", function () {
     $("#x").hide();
     $("#startup").hide();
     $("#startup-content").hide();

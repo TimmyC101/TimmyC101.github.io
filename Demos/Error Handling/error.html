@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Validator</title>
+        <link rel="stylesheet" href="css/styling.css" />
+    </head>
+    <body>
+        <div id="title"><p>Password Validation</p></div>
+        <div class="row">
+            <div class="column content">
+                <fieldset>
+                    <legend>Area Calculator</legend>
+                    <Label id="height-label" for="height">Height: </Label>
+                    <input id="height" type="text" name="height" placeholder="Enter height">
+                    <br/>
+                    <label id="width-label" for="width">Width: </label>
+                    <input id="width" type="text" name="width" placeholder="Enter width">
+                    <input id="sub" type="submit" Value="Calculate Area">
+                </fieldset><br/><br/>
+                <div id="area"></div>
+            </div>
+            <div class="column features">Features/Logic:
+                <ul>
+                    <li>Executes a function on click that returns the calculated area, which is populated into the html</li>
+                    <li>If the user enters invalid input, the function returns a message and reports an error to the console </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/styling.css" />
+    </head>
+    <body>
+        <div id="title"><p>Retro Game Inventory</p></div>
+        <div class="row">
+            <div class="column content">
+                <label for="console">Select Console: </label>
+                <select id="console">
+                    <option value="Nintendo">Nintendo</option>
+                    <option value="Super Nintendo">Super Nintendo</option>
+                    <option value="Nintendo 64">Nintendo 64</option>
+                    <option value="Playstation">Playstation</option>
+                </select>
+                <br/><br/>
+                <button id="search" type="submit" value="Search by Console">Search by Console</button>
+                <button id="reset" type="submit" value="Show All">Show All</button>
+                <br/><br/>
+                <div id="games"></div>
+            </div>
+            <div class="column features">Features/Logic:
+                <ul>
+                    <li>Created an array of retro game objects.</li>
+                    <li>As the table is populated, a second array "rows" is created that links each game object to a table row within the DOM.</li>
+                    <li>On search, we iterate through the "rows" object and filter based on our criteria (console name).  If matched, the associated table row within the DOM is shown; else, it is hidden.</li>
+                    <li>On reset, we simply loop back through "rows" and show each.</li>
+                    <li>Clicking on the table headers will result in a sort - first ascending, and subsequently alternating.</li>
+                    <li>On click, JS will find the index of the clicked header and then use the sort method on the array of rows for the corresponding column of the table.</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
