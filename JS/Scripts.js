@@ -1,32 +1,10 @@
 $(function() {
 
-  $(".name").on("mouseenter", function () {
-    $(".contact").addClass("show");
-  });
-
-  $(".name").on("mouseleave", function () {
-    $(".contact").removeClass("show");
-  });
-
-  $("#x, #startup").on("click", function () {
+  $("#x, #startup").on("click", () => { // arrow function syntax: function = (params) => {expression}
     $("#x").hide();
     $("#startup").hide();
     $("#startup-content").hide();
   })
-
-    // var rippler = null;
-
-    // $(".icon").on("mouseenter", function() {
-    //     $(this).addClass("ripple1");
-    //     rippler = window.setInterval(function() {
-    //         $(".icon.ripple1").toggleClass("ripple2");
-    //     }, 500);
-    // });
-
-    // $(".icon").on("mouseleave", function() {
-    //     clearInterval(rippler);
-    // });
-
 
   // Sequence of code to identify which image was clicked and call the popup function with the appropriate text
   var images = document.getElementsByTagName("img"); // Create variable representing a nodelist of all image objects
@@ -69,11 +47,15 @@ $(function() {
     }
   }
 
-  $(".dropdown").on("mouseenter", function () {
-    $(".dropdown-items").fadeIn(500);
+  $(".js-dropdown").on("mouseenter", function () {
+    $("#js-items").fadeIn(500);
   });
 
-  $(".dropdown").on("mouseleave", function () {
+  $(".react-dropdown").on("mouseenter", function () {
+    $("#react-items").fadeIn(500);
+  });
+
+  $(".js-dropdown, .react-dropdown").on("mouseleave", function () {
     $(".dropdown-items").fadeOut(500);
   });
 

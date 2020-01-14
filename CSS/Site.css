@@ -121,14 +121,19 @@ li {
     display: flex;
     margin-left: 20px;
     padding: 5px;
+    width: 200px;
 }
 
-.dropdown {
+.js-dropdown, .react-dropdown {
     position: relative;
     margin-left: 50px;
     height: 100%;
-    width: 200px;
+    width: 250px;
     line-height: 70px;
+}
+
+.js-dropdown {
+    margin-left: 0px;
 }
 
 .demos {
@@ -150,7 +155,7 @@ li {
 .dropdown-items {
     position: absolute;
     display: none;
-    width: 140px;
+    width: 250px;
     background-color: darkslategray;
     padding: 10px;
     line-height: 100%;
@@ -160,7 +165,7 @@ li {
     display: block;
     color: white;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 2px;
 }
 
@@ -221,48 +226,31 @@ li {
 .icon:hover {
     height: 60px;
     width: 60px;
+    background-size: 60px;
 }
 
 /* images are saved as squares with white space around - must be clipped into circles */
 /* clip %'s change based on image to prevent weird pixel effects */
-.icon-LinkedIn {
-    background-image: url("../Images/LinkedIn.png");
+
+.icon-LinkedIn, .icon-GitHub, .icon-Email, .icon-Resume {
     background-size: 50px;
     clip-path: circle(48% at 50% 50%);
 }
 
-.icon-LinkedIn:hover {
-    background-size: 60px;
+.icon-LinkedIn {
+    background-image: url("../Images/LinkedIn.png");
 }
 
 .icon-GitHub {
     background-image: url("../Images/GitHub.png");
-    background-size: 50px;
-    clip-path: circle(48% at 50% 50%);
-}
-
-.icon-GitHub:hover {
-    background-size: 60px;
 }
 
 .icon-Email {
     background-image: url("../Images/Email.png");
-    background-size: 50px;
-    clip-path: circle(49% at 50% 50%);
-}
-
-.icon-Email:hover {
-    background-size: 60px;
 }
 
 .icon-Resume {
     background-image: url("../Images/Resume.png");
-    background-size: 50px;
-    clip-path: circle(49% at 50% 50%);
-}
-
-.icon-Resume:hover {
-    background-size: 60px;
 }
 
 /* END NAVBAR */

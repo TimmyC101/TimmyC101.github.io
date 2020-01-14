@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./CSS/Site.css">
-        <title>Tim's Portfolio! (Testing)</title>
+        <title>Tim's Portfolio!</title>
     </head>
 
     <body>
@@ -20,7 +20,7 @@
                 <li>I achieved expert level scores on indeed.com assessments for problem solving, critical thinking, and data analysis.</li>
                 <li>I have experience writing procedural technical documentation.</li>
                 <li>I am ready to work my tail off and become a valuable asset to your organization.</li>
-                <li>I have references to validate all of the above statements.</li>
+                <li>I can validate all of the above statements via references or documentation.</li>
 
             </ul>
         </div>
@@ -33,10 +33,12 @@
             <div class="name">
                 Tim Calhoun
             </div>
-            <div class="dropdown ztop">
-                <div class="demos">Demos<span class="triangle"></span></div>
-                <div class="dropdown-items">
-                        <a href="./Demos/Filtering and Sorting/index.html" target="_blank">Filtering and Sorting</a>
+            <div class="js-dropdown ztop">
+                <div id="js" class="demos">
+                    JavaScript Demos<span class="triangle"></span>
+                </div>
+                <div id="js-items" class="dropdown-items">
+                    <a href="./Demos/Filtering and Sorting/index.html" target="_blank">Filtering and Sorting</a>
                     <a href="./Demos/PW Validation/pw-validation.html" target="_blank">Password Validation</a>
                     <a href="./Demos/Event Handling/Event Handling.html" target="_blank">Event Handling</a>
                     <a href="./Demos/AJAX/ajax.html" target="_blank">AJAX - XML & JSON</a>
@@ -46,12 +48,21 @@
                     <a href="./Demos/Error Handling/error.html" target="_blank">Error Handling</a>
                 </div>
             </div>
+            <div class="react-dropdown ztop">
+                <div id="react" class="demos">
+                    React Demos<span class="triangle"></span>
+                </div>
+                <div id="react-items" class="dropdown-items">
+                    <a href="https://timmyc101.github.io/meme-generator" target="_blank">Meme-Generator</a>
+                    <a href="https://github.com/TimmyC101/meme-generator" target="_blank">Meme-Generator Source Code</a>
+                </div>
+            </div>
             <!-- <div class="contact">
                 281-797-8470
             </div> -->
             <div class="icons">
                 <a class="icon icon-LinkedIn" href="https://www.linkedin.com/in/tim-calhoun-7159885b/" target="_blank"></a>
-                <a class="icon icon-GitHub" href="https://github.com/TimmyC101/LiveProjects" target="_blank"></a>
+                <a class="icon icon-GitHub" href="https://github.com/TimmyC101?tab=repositories" target="_blank"></a>
                 <a class="icon icon-Email" href="mailto:tcalhoun101@yahoo.com" target="_blank"></a>
                 <a class="icon icon-Resume" href="./Docs/Website Resume.pdf" target="_blank"></a>
             </div>
@@ -144,6 +155,15 @@
                 <span class="popup ztop" id="Github-popup"> 
                     Proficient with version control, GitHub, repositories, GitHub Desktop Application, and GitBash.
                     <br><br>Knowledgeable about general version control concepts such as: pushes, pulls, branches, merges, and more.
+                </span>
+
+                <div class="column">
+                    <img id="React-button" class="skills-image btn" src="./Images/React.png" alt="React">
+                </div>
+                <span class="popup ztop" id="React-popup"> 
+                    Continued my education by utilizing various online tutorials to learn React.
+                    <br><br>Topics included: functions, classes, API's, state, components, lifecycle methods, event-handling, forms, and conditional rendering.
+                    <br><br>You can see many of my demos from the course in the dropdown menu at the top of the screen (in progress).
                 </span>
 
                 <!-- About Me-->
