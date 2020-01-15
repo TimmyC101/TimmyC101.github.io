@@ -1,0 +1,180 @@
+/* Orbit is created by applying one translation to the parent container and one translation to the child object
+    The easing functions are then applied to create an elliptical pattern as opposed to a linear one */
+    @keyframes SlideX1 {
+        0% {
+            transform: translateX(0%);
+        }
+        25% {
+            animation-timing-function: ease-in;
+            transform: translateX(450%);
+        }
+        50% {
+            animation-timing-function: ease-out;
+            transform: translateX(0%);
+        }
+        75% {
+            animation-timing-function: ease-in;
+            transform: translateX(-450%);
+        }
+        100% {
+            animation-timing-function: ease-out;
+            transform: translateX(0%);
+        }
+    }
+    
+    @keyframes SlideY1 {
+        0% {
+            transform: translateY(0px);
+        }
+        25% {
+            animation-timing-function: ease-out;
+            transform: translateY(175px);
+        }
+        50% {
+            animation-timing-function: ease-in;
+            transform: translateY(350px);
+        }
+        75% {
+            animation-timing-function: ease-out;
+            transform: translateY(175px);
+        }
+        100% {        
+            animation-timing-function: ease-in;
+            transform: translateY(0px);
+        }
+    }
+    
+    @keyframes SlideX2 {
+        0% {
+            transform: translateX(0%);
+        }
+        25% {
+            animation-timing-function: ease-in;
+            transform: translateX(-360%);
+        }
+        50% {
+            animation-timing-function: ease-out;
+            transform: translateX(0%);
+        }
+        75% {
+            animation-timing-function: ease-in;
+            transform: translateX(360%);
+        }
+        100% {
+            animation-timing-function: ease-out;
+            transform: translateX(0%);
+        }
+    }
+    
+    @keyframes SlideY2 {
+        0% {
+            transform: translateY(0px);
+        }
+        25% {
+            animation-timing-function: ease-out;
+            transform: translateY(145px);
+        }
+        50% {
+            animation-timing-function: ease-in;
+            transform: translateY(290px);
+        }
+        75% {
+            animation-timing-function: ease-out;
+            transform: translateY(145px);
+        }
+        100% {        
+            animation-timing-function: ease-in;
+            transform: translateY(0px);
+        }
+    }
+    
+    @keyframes SlideX3 {
+        0% {
+            transform: translateX(0%);
+        }
+        25% {
+            animation-timing-function: ease-in;
+            transform: translateX(256%);
+        }
+        50% {
+            animation-timing-function: ease-out;
+            transform: translateX(0%);
+        }
+        75% {
+            animation-timing-function: ease-in;
+            transform: translateX(-256%);
+        }
+        100% {
+            animation-timing-function: ease-out;
+            transform: translateX(0%);
+        }
+    }
+    
+    @keyframes SlideY3 {
+        0% {
+            transform: translateY(0px);
+        }
+        25% {
+            animation-timing-function: ease-out;
+            transform: translateY(115px);
+        }
+        50% {
+            animation-timing-function: ease-in;
+            transform: translateY(230px);
+        }
+        75% {
+            animation-timing-function: ease-out;
+            transform: translateY(115px);
+        }
+        100% {        
+            animation-timing-function: ease-in;
+            transform: translateY(0px);
+        }
+    }
+    
+    @keyframes SlideX4 {
+        0% {
+            transform: translateX(0%);
+        }
+        25% {
+            animation-timing-function: ease-in;
+            transform: translateX(-126%);
+        }
+        50% {
+            animation-timing-function: ease-out;
+            transform: translateX(0%);
+        }
+        75% {
+            animation-timing-function: ease-in;
+            transform: translateX(126%);
+        }
+        100% {
+            animation-timing-function: ease-out;
+            transform: translateX(0%);
+        }
+    }
+    
+    @keyframes SlideY4 {
+        0% {
+            transform: translateY(0px);
+        }
+        25% {
+            animation-timing-function: ease-out;
+            transform: translateY(85px);
+        }
+        50% {
+            animation-timing-function: ease-in;
+            transform: translateY(170px);
+        }
+        75% {
+            animation-timing-function: ease-out;
+            transform: translateY(85px);
+        }
+        100% {        
+            animation-timing-function: ease-in;
+            transform: translateY(0px);
+        }
+    }
+    
+    /* END TITLE BAR */
+    

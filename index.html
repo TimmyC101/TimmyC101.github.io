@@ -2,7 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <!-- To anyone looking at this - I'm aware each stylesheet creates a new HTTP request and is therefore suboptimal for larger applications.
+        In this instance, on a single page web application, I'm comfortable separating them in order to compartmentalize my code and avoid one massive css file. -->
         <link rel="stylesheet" href="./CSS/Site.css">
+        <link rel="stylesheet" href="./CSS/startup.css">
+        <link rel="stylesheet" href="./CSS/navbar.css">
+        <link rel="stylesheet" href="./CSS/title.css">
+        <link rel="stylesheet" href="./CSS/orbit.css">
+        <link rel="stylesheet" href="./CSS/skills.css">
+        <link rel="stylesheet" href="./CSS/footer.css">
         <title>Tim's Portfolio!</title>
     </head>
 
@@ -53,8 +61,10 @@
                     React Demos<span class="triangle"></span>
                 </div>
                 <div id="react-items" class="dropdown-items">
-                    <a href="https://timmyc101.github.io/meme-generator" target="_blank">Meme-Generator</a>
+                    <a href="https://timmyc101.github.io/meme-generator/" target="_blank">Meme-Generator</a>
                     <a href="https://github.com/TimmyC101/meme-generator" target="_blank">Meme-Generator Source Code</a>
+                    <a href="https://timmyc101.github.io/forms-challenge-architecture/" target="_blank">Data Binding</a>
+                    <a href="https://github.com/TimmyC101/forms-challenge-architecture" target="_blank">Data Binding Source Code</a>
                 </div>
             </div>
             <!-- <div class="contact">
@@ -171,7 +181,7 @@
                     I have a bachelor's degree in Civil Engineering from the University of Texas at Austin.  During my time at Chevron as a data analyst, I taught myself Visual Basic in order to streamline and improve various processes, and created custom tools to improve efficiency and allow for quick and easy analysis of data.  
                     <br><br>It was during that time that I discovered my passion for programming;  so I packed up my belongings and moved to Denver in order to enroll in the Software Development Course at The Tech Academy in Denver, Colorado, which I have recently completed.
                     <br><br>Loki (pictured) is my pup.  He enjoys playing, playing, and sometimes when he is a little tired, playing.
-                    <br><br>Personally, I enjoy staying active by hiking and playing sports.  When I'm not doing that, you will generally find me dragonslaying with my friends via online or tabletop games.
+                    <br><br>Personally, I enjoy staying active by exercising and playing sports.  When I'm not doing that, you will generally find me dragonslaying with my friends via online or tabletop games.
                 </span>
             </div>
         </div>
@@ -184,51 +194,64 @@
             <div class="skills-buttons">
 
                 <div class="column2">
-                    <img id = Analytical-button class="skills-image btn" src="./Images/Analytical.jpg" alt="Analytical">
+                    <img id = Solution-button class="skills-image btn" src="./Images/solution.jpg" alt="Solution">
                     <div class="skills-text">
-                        Affinity for Analytics
+                        Solution Architect
                     </div>
                 </div>
-                <span class="popup ztop prof-skills-mod" id="Analytical-popup">
-                    Analytical and detail oriented, strategic thinker with exceptional problem-solving capabilities.
+                <span class="popup ztop prof-skills-mod" id="Solution-popup">
+                    Self-motivated solution architect – identified multiple inefficient processes and created new tools and solutions, reducing daily data entry by over 50% and improving decision making. 
+                    This was not in my job description - I simply recognized an opportunity.
                 </span>
 
                 <div class="column2">
-                    <img id="Teamwork-button" class="skills-image btn" src="./Images/Teamwork.jpg" alt="Teamwork">
+                    <img id="Training-button" class="skills-image btn" src="./Images/Training.jpg" alt="Training">
                     <div class="skills-text">
-                        Team Player
+                        Communicator and Trainer
+                    </div>
+                </div>
+                <span class="popup ztop prof-skills-mod" id="Training-popup">
+                    Superb communicator, capable of taking ownership of a tool or process and educating team members.  Sole trainer for cost estimation software to over 50 colleagues.
+                </span>
+
+                <div class="column2">
+                    <img id="Teamwork-button" class="skills-image btn" src="./Images/Teamwork.webp" alt="Teamwork">
+                    <div class="skills-text">
+                        Adaptable Team Member
                     </div>
                 </div>
                 <span class="popup ztop prof-skills-mod" id="Teamwork-popup">
-                        Flexible and adaptable team player - able to take on leadership or supporting roles.
+                    Flexible and adaptable team member that can take on leadership or supporting roles.  
+                    Regularly hosted and led data technologist coding review meetings while performing QA/QC of data.
                 </span>
 
                 <div class="column2">
-                    <img id="Pressure-button" class="skills-image btn" src="./Images/Pressure.gif" alt="Pressure">
+                    <img id = Writing-button class="skills-image btn" src="./Images/Writing.webp" alt="Writing">
                     <div class="skills-text">
-                        Cool Under Pressure
+                        Technical Writer
                     </div>
                 </div>
-                <span class="popup ztop prof-skills-mod" id="Pressure-popup">
-                    Enjoy and thrive in high pressure, high demand, fast paced environments.
+                <span class="popup ztop prof-skills-mod" id="Writing-popup">
+                    Excellent technical writer. Able to communicate objectives clearly and concisely. Secondary author of Chevron’s Gulf of Mexico Well Cost Estimation and Forecasting Guidance Document.
                 </span>
 
                 <div class="column2">
-                    <img id="Communication-button" class="skills-image btn" src="./Images/Communication.jpg" alt="Communication">
+                    <img id="Indeed-button" class="skills-image btn" src="./Images/Indeed.webp" alt="Indeed">
                     <div class="skills-text">
-                        Exceptional Communicator
+                        Expert Problem Solver
                     </div>
                 </div>
-                <span class="popup ztop prof-skills-mod" id="Communication-popup">
-                    Succinct, clear, and thorough.  Excellent listening skills.
+                <span class="popup ztop prof-skills-mod" id="Indeed-popup">
+                    Expert level score on Indeed.com assessments: Problem Solving, Critical Thinking, and Data Analysis
                 </span>
+
             </div>
         </div>
 
         <div class="footer">
             <p class="footer-margin">281-797-8470</p>
             <a class="footer-margin" href="mailto:tcalhoun101@yahoo.com" target="_blank">tcalhoun101@yahoo.com</a>
-            <p class="footer-margin">Golden, CO</p>
+            <p class="footer-margin">Houston, TX</p>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

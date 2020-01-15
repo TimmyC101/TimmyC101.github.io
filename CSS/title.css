@@ -1,0 +1,113 @@
+.title-box {
+    position: relative;
+}
+
+.title-image {
+    height: 400px;
+    background-image: url("../Images/Office.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    filter: grayscale(100%) saturate(100%) brightness(70%) hue-rotate(180deg);
+}
+
+.orbit {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+}
+
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: -50px 0 0 -50px;
+    background-image: url("../Images/Tim.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    transition: all 1000ms cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.sun:hover {
+    height: 120px;
+    width: 120px;
+    margin: -60px 0 0 -60px;
+    box-shadow: 0 0 10px 5px darkslategray;
+}
+
+.planet1-box {
+    position: absolute;
+    height: 380px;
+    width: 10%;
+    top: 10px;
+    left: 45%;
+    animation: SlideX1 20s infinite ease-out;
+    z-index: 1;
+}
+
+.planet1 {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: calc(50% - 15px);
+    animation: SlideY1 20s infinite ease-in;
+}
+
+.planet2-box {
+    position: absolute;
+    height: 320px;
+    width: 10%;
+    top: 40px;
+    left: 45%;
+    animation: SlideX2 16s infinite ease-out;
+}
+
+.planet2 {
+    position: absolute;
+    height: 30px;
+    width: 40px;
+    left: calc(50% - 20px);
+    animation: SlideY2 16s infinite ease-in;
+}
+
+.planet3-box {
+    position: absolute;
+    height: 260px;
+    width: 10%;
+    top: 70px;
+    left: 45%;
+    animation: SlideX3 12s infinite ease-out;
+}
+
+.planet3 {
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    left: calc(50% - 30px);
+    animation: SlideY3 12s infinite ease-in;
+}
+
+.planet4-box {
+    position: absolute;
+    height: 200px;
+    width: 10%;
+    top: 100px;
+    left: 45%;
+    animation: SlideX4 8s infinite ease-out;
+}
+
+.planet4 {
+    position: absolute;
+    height: 30px;
+    width: 80px;
+    left: calc(50% - 40px);
+    animation: SlideY4 8s infinite ease-in;
+}

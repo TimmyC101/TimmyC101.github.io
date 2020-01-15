@@ -1,0 +1,112 @@
+.skills-box {
+    background: linear-gradient(180deg, rgba(200,200,200,1) 0%, rgba(255,255,255,1) 50%, rgba(200,200,200,1) 100%);
+    font-size: 1.5rem;
+    position: relative;
+    height: 200px;
+}
+
+.skills-box2 {
+    background: linear-gradient(180deg, rgba(200,200,200,1) 0%, rgba(255,255,255,1) 50%, rgba(200,200,200,1) 100%);
+    font-size: 1.5rem;
+    position: relative;
+    height: 235px;
+}
+
+.skills-title {
+    text-align: center;
+    height: 30px;
+    padding: 10px;
+}
+
+.divider {
+    width: 80%;
+    margin: 0% 10%;
+    height: 2px;
+    background-color: black;
+}
+
+.skills-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.skills-image {
+    height: 80px;
+    width: 100px;
+    border: 2px solid black;
+    transition: all 1000ms cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.skills-image:hover {
+    height: 100px;
+    width: 125px;
+    box-shadow: 0 0 10px 5px darkslategray;
+}
+
+.popup {
+    position: absolute;
+    visibility: hidden;
+    background-color: rgb(226, 226, 226);
+    bottom: 240px;
+    font-size: 1rem;
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px 5px black;
+}
+
+/* Centering fix for IE */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .popup {
+        left: calc(10% - 20px);
+    }
+}
+
+.show-popup {
+    visibility: visible;
+}
+
+#Tim-popup {
+    bottom: 0px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px 20px 0px;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 30px 20px 0px;
+}
+
+.skills-text {
+    text-align: center;
+    width: 104px;
+    font-size: 1rem;
+    margin-top: 5px;
+
+}
+
+.prof-skills-mod {
+    text-align: center;
+    width: 80%;
+    background-color: darkslategray;
+    color: white;
+    bottom: 460px;
+}
+
+/* Centering Fix for IE */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .prof-skills-mod {
+        left: 50%;
+        -ms-transform: translateX(-50%);
+    }
+}
