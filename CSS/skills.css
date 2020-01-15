@@ -50,12 +50,16 @@
     visibility: hidden;
     background-color: rgb(226, 226, 226);
     bottom: 240px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 80%;
     padding: 20px;
     border-radius: 5px;
     border: 2px solid black;
     box-shadow: 0 0 10px 5px black;
+}
+
+.popup.prof-skills-mod {
+    width: 40%;
 }
 
 /* Centering fix for IE */
